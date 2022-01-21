@@ -42,7 +42,7 @@ export class AppController {
 
         console.log(challenge);
 
-        return response.status(200).send(challenge);
+        return response.status(200);
       } else {
         // Respond with '403 Forbidden' if verify tokens do not match
         return response.sendStatus(HttpStatus.FORBIDDEN);

@@ -22,6 +22,8 @@ export const callSendAPI = async (
       {
         headers: {
           'Content-Type': 'application/json',
+        },
+        params: {
           access_token: pageAccessToken,
         },
       },

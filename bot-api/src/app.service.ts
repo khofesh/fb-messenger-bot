@@ -14,6 +14,7 @@ export class AppService {
     return 'Hello World!';
   }
 
+  // Handles messages events
   handleMessage(senderPsid: string, receivedMessage: any) {
     let response: any;
 
@@ -60,6 +61,7 @@ export class AppService {
     callSendAPI(senderPsid, response, this.pageAccessToken);
   }
 
+  // Handles messaging_postbacks events
   handlePostback(senderPsid: any, receivedPostback: any) {
     let response: any;
 

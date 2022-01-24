@@ -57,3 +57,12 @@ curl -X GET "localhost:3000/webhook?hub.verify_token=4opq8hRs5UjR8Geeh7ZM&hub.ch
 ```shell
 curl -H "Content-Type: application/json" -X POST "localhost:3000/webhook" -d '{"object": "page", "entry": [{"messaging": [{"message": "TEST_MESSAGE"}]}]}'
 ```
+
+## deploy to heroku
+
+```shell
+[fahmad@ryzen bot-api]$  heroku apps:create
+ ›   Warning: heroku update available from 7.59.1 to 7.59.2.
+Creating app... done, ⬢ immense-plains-76716
+https://immense-plains-76716.herokuapp.com/ | https://git.heroku.com/immense-plains-76716.git
+```
